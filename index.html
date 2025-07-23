@@ -1,234 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snow's Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="snowflake-svgrepo-com.svg" type="image/svg+xml" />
+    <script
+      src="https://kit.fontawesome.com/8a26cb443d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/8a26cb443d.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <div class="head">
-            <nav>
-                <img src="Logo.png" alt="Logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">My Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
+      <div class="container">
+        <div class="head">
+          <nav>
+            <img src="Logo.png" alt="Logo" class="logo" />
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">My Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+          </nav>
         </div>
-            <div class="header-text">
-                <p>MMS Software Engineer</p>
-                <h1>Hey, I'm <span>DANIEL</span> <br> Sowale from Nigeria</h1>
-            </div>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>
+            Hey, I'm <span class="typing-text"></span> <br />
+            from Nigeria
+          </h1>
         </div>
+      </div>
     </div>
     <!-- About -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="About pic.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste at dolores, veritatis provident
-                        deleniti ipsum saepe dolor voluptatibus. Magnam, velit impedit corrupti repellendus sint
-                        molestias, maiores, est optio perferendis et alias. Reprehenderit temporibus expedita doloribus
-                        tempore aspernatur deserunt aliquid eum provident voluptatum ab. Laborum sit voluptatibus
-                        voluptatem. Est eveniet quaerat quasi, temporibus, cupiditate adipisci dolor incidunt, iure
-                        itaque ullam expedita.</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="About pic.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Daniel Sowale — but you can call me
+              <strong>Danny Snow</strong> ❄️. I'm a passionate front-end
+              developer from Nigeria 🇳🇬, focused on building clean, responsive
+              websites using HTML, CSS, JavaScript, and React. <br /><br />
+              I’m currently a student at <strong>NIIT</strong>, where I’m
+              studying Full-Stack Web Development to deepen my skills and stay
+              ahead in tech. <br /><br />
+              I also serve as the
+              <strong>President of the Teenagers' Church</strong>, where I lead
+              and mentor young people in faith and purpose. <br /><br />
+              Outside coding and church, I work as a
+              <strong>Visa Consultant</strong> and
+              <strong>Graphics Designer</strong>, helping people travel and
+              bring their visual ideas to life. <br /><br />
+              Always learning. Always building. Let’s make something amazing
+              together!
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Graphics Designer</span><br>Designing Logo, Flyers, ETC.</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Desktop apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023 - 2024</span><br>MMS Software Engineer (Learning)</li>
-                            <li><span>2022 - 2023</span><br>Graphics Design</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2024</span><br>MMS Software Engineer</li>
-                            <li><span>2023</span><br>Graphics Design</li>
-                            <li><span>2022</span><br>Secondary School</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Graphics Designer</span><br />Designing Logo, Flyers,
+                  ETC.
+                </li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Apps with React
+                  Native
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - 2024</span><br />MMS Software Engineer (Learning)
+                </li>
+                <li><span>2022 - 2023</span><br />Graphics Design</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span><br />MMS Software Engineer</li>
+                <li><span>2023</span><br />Graphics Design</li>
+                <li><span>2022</span><br />Secondary School</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Services -->
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla rerum tempora totam quibusdam
-                        debitis, exercitationem quod quas expedita quis.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <h2>Graphics Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla rerum tempora totam quibusdam
-                        debitis, exercitationem quod quas expedita quis.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fab fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla rerum tempora totam quibusdam
-                        debitis, exercitationem quod quas expedita quis.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I design and develop responsive, user-focused websites that
+              combine aesthetics with performance. From landing pages to
+              full-scale platforms, I ensure every site is optimized for speed,
+              accessibility, and seamless user experience.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-pen-to-square"></i>
+            <h2>Graphics Design</h2>
+            <p>
+              I create visually compelling designs that communicate your brand’s
+              identity effectively. Whether it’s logos, banners, or full brand
+              packages, I focus on clarity, creativity, and consistency across
+              all media.
+            </p>
+            <a
+              href="https://www.canva.com/learn/graphic-design-tips-non-designers-and-beginners/"
+              target="_blank"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              I design intuitive and modern interfaces for mobile and web
+              applications. My approach emphasizes usability, clean layout, and
+              a user experience that enhances engagement and functionality.
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/User_interface_design"
+              target="_blank"
+              >Learn more</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- portfolio -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="Fire and Ice.jpg" alt="Work 1">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you yo the talented people around the world. Download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Fire and Ice.jpg" alt="Work 1">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you yo the talented people around the world. Download it from play store.</p>
-                        <a href="#
-                        
-                        
-                        "><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Fire and Ice.jpg" alt="Work 1">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you yo the talented people around the world. Download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </div>
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="flutterwave pic.jpg" alt="Work 1" />
+            <div class="layer">
+              <h3>Flutterwave clone</h3>
+              <p>
+                Seamlessly send and receive payments with our
+                Flutterwave-inspired app. Fast, secure, and designed for global
+                transactions.
+              </p>
 
+              <a href="https://flutterwaveclone101.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="easywears.jpg" alt="Work 1" />
+            <div class="layer">
+              <h3>Easy Wears</h3>
+              <p>
+                Discover stylish and affordable clothing for every occasion.
+                Shop the latest trends with just a tap.
+              </p>
+
+              <a href="https://easywearsweb.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Fire and Ice.jpg" alt="Work 1" />
+            <div class="layer">
+              <h3>Apps</h3>
+              <p>
+                Still in development, but soon to be a hub for innovative mobile
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn" id="seeMoreBtn">See more</a>
+        <p
+          id="upcomingMessage"
+          style="
+            text-align: center;
+            display: none;
+            margin-top: 20px;
+            color: #ff004f;
+            font-weight: bold;
+          "
+        >
+          More projects coming soon...
+        </p>
+      </div>
+    </div>
 
     <!-- Contact -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i> sowaledaniel5@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> 09031483166</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://wa.me/+2349031483166?text=Hi%20Danny%20Snow%20My%20Name%20is"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/dannysnow101/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="http://www.linkedin.com/in/sowale-daniel-b7b711309"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="Make Money.jpg" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Messsage"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> sowaledaniel5@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> 09031483166</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a
+                href="https://wa.me/+2349031483166?text=Hi%20Danny%20Snow%20My%20Name%20is"
+                target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://www.instagram.com/dannysnow101/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="http://www.linkedin.com/in/sowale-daniel-b7b711309"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
+            <a href="Make Money.jpg" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Messsage"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>copyright © Daniel❄.</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright © Daniel❄.</p>
+      </div>
     </div>
 
-
     <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
 
     <script>
+      var sidemeu = document.getElementById("sidemenu");
 
-        var sidemeu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemeu.style.right = "0";
-        }
-        function closemenu(){
-            sidemeu.style.right = "-200px";
-        }
-
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
     </script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw5kpFRcBGXPsjL3_6zlXwz89ug6fj7EiEhrOSuAMVFcsvE73ogs6EfxKeZkKyvgcNM/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw5kpFRcBGXPsjL3_6zlXwz89ug6fj7EiEhrOSuAMVFcsvE73ogs6EfxKeZkKyvgcNM/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-</body>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
 
+    <script>
+      const typingText = document.querySelector(".typing-text");
+      const words = ["DANIEL", "SOWALE"];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let delay = 150;
+
+      const typingSpeed = 150;
+      const deletingSpeed = 80;
+      const pauseAfterTyping = 1000;
+      const pauseAfterDeleting = 500;
+
+      function type() {
+        const currentWord = words[wordIndex];
+
+        if (!isDeleting) {
+          typingText.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+
+          if (charIndex === currentWord.length) {
+            // Finished typing the full word
+            isDeleting = true;
+            delay = pauseAfterTyping;
+          } else {
+            delay = typingSpeed;
+          }
+        } else {
+          typingText.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+
+          if (charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            delay = pauseAfterDeleting;
+          } else {
+            delay = deletingSpeed;
+          }
+        }
+
+        setTimeout(type, delay);
+      }
+
+      document.addEventListener("DOMContentLoaded", type);
+    </script>
+    <script>
+      document
+        .getElementById("seeMoreBtn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          this.style.display = "none"; // hide the button
+          document.getElementById("upcomingMessage").style.display = "block"; // show the message
+        });
+    </script>
+  </body>
 </html>
